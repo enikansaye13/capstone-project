@@ -3,7 +3,8 @@ let score = 0;
 let questionIndex = 0;
 
 const gradeQuestion = (ans) => {
-    if (ans != selectedQuestions[questionIndex].answer) {
+    console.log(ans,selectedQuestions[questionIndex].answer)
+    if (ans == selectedQuestions[questionIndex].answer) {
         score += 10;
         console.log(score);
     };
@@ -46,7 +47,7 @@ const renderQuestion = (qIndex) => {
     question.options.forEach((element, i) => {
         let opt = ".options" + (i + 1);
 
-        let radiobut = $('<input type="radio" name="answer" value=" + element +"/> ');
+        let radiobut = $('<input type="radio" name="answer" value=' + element +' /> ');
 
         let radiolab = $('<label for=' + element + '>' + element + '</label>');
         radiobut.appendTo(opt);

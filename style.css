@@ -9,8 +9,13 @@ body{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    padding: 100px;
 
 }
-label{
-    m
+.question-options{
+    padding:20px;
+}
+.space{
+    padding-top:20px;
+       
 }
